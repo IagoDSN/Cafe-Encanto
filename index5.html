@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Encanto</title>
+    <link rel="icon" href="imagens/logo_cafeteria.ico">
+
+    <link rel="stylesheet" href="Cstyle.css">
+    <script src="JavaScript.js"></script>
+
+</head>
+<body>
+    <div class="caixa">
+    <img src="imagens/logo_cafeteria.png" class="logo" alt="logo da cafeteria" onclick="inicial()">
+    <div class="tchome" onclick="inicial()">HOME</div>
+    <div class="text conheca" onclick="sobre()">Conheça</div>
+    <div class="text conheca" onclick="eventos()">Eventos</div>
+    <div class="text conheca" onclick="cardapio()">Cardápio</div>
+    <div class="a10 conheca" onclick="contato()">Contato</div>
+    <img src="imagens/facebook.png" class="ico facebook" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ico instagram" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ico instagram" alt="tiktok" onclick="tiktok()">
+    <div class="botao" onclick="menuas()">
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+    </div>
+    </div>
+
+    <div id="menu" class="slideDiv esconde">
+        <div class="print" onclick="inicial()">HOME</div>
+        <div id="pag" class="evento contato" onclick="sobre()">Conheça</div>
+        <div id="pag" class="evento contato" onclick="eventos()">Eventos</div>
+        <div id="pag" class="evento contato" onclick="cardapio()">Cardápio</div>
+        <div id="pag" class="evento contato" onclick="contato()">Contato</div>
+        <div class="redes">
+        <img src="imagens/facebook.png" class="ita" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ita" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ita" alt="tiktok" onclick="tiktok()">
+    </div>
+    </div>
+    
+    <div class="container">
+    <p class="textotr">O QUE PODEMOS FAZER POR VOCÊ?</p>
+    </div>
+
+    <div class="num30">
+        <div style="justify-items: right; width: 50%;">
+        <div style="justify-items: right;" class="num4">
+    <p style="text-align: right;" class="frase">A sua opinião é essencial para tornar nossa cafeteria ainda melhor! Envie seu feedback para nosso e-mail e ajude-nos a criar a experiência perfeita para você.</p>
+    <button class="btnmail" onclick="window.location.href='mailto:cafe-encanto@gmail.com?subject=Feedback%20da%20Cafeteria'">envie sua mensagem</button>
+</div>
+    </div>
+        <div>
+            <div class="reto"></div>
+        </div>
+        <div style="justify-items: left; width: 50%;">
+        <div style="justify-items: left;" class="num4">
+    <p style="text-align: left;" class="frase">Junte-se a nós e experimente um ambiente acolhedor e dinâmico.
+        <b>Valorizamos o trabalho em equipe e o respeito.</b>Venha fazer parte da nossa história!</p>
+        <button class="btnmail" onclick="zap()">Venha trabalhar conosco</button>
+        </div>
+    </div>
+</div>
+
+    <div class="sociais">
+        <button class="btnrede" onclick="face()">Facebook</button>
+        <button class="btnrede" onclick="insta()">Instagram</button>
+        <button class="btnrede" onclick="tiktok()">TikTok</button>
+        <button class="btnrede" onclick="zap()">WhatsApp</button>
+    </div>
+
+    <div class="container">
+        <img src="imagens/mapa.JPG" class="back" alt="fundo da cafeteria">
+    </div>
+
+    <div class="escuro">
+<img src="imagens/logo_cafeteria.png" class="logo" alt="logo da cafeteria" onclick="inicial()">
+    <div class="tchome" onclick="inicial()">HOME</div>
+    <div class="text conheca" onclick="sobre()">Conheça</div>
+    <div class="text conheca" onclick="eventos()">Eventos</div>
+    <div class="text conheca" onclick="cardapio()">Cardápio</div>
+    <div class="a10 conheca" onclick="contato()">Contato</div>
+    <img src="imagens/facebook.png" class="ico facebook" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ico instagram" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ico instagram" alt="tiktok" onclick="tiktok()">
+    </div>
+    <div class="direitos">
+        <p class="teti">Todos os direitos reservados | @2025</p>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Encanto</title>
+    <link rel="icon" href="imagens/logo_cafeteria.ico">
+
+    <link rel="stylesheet" href="Cstyle.css">
+    <script src="JavaScript.js"></script>
+
+</head>
+<body>
+    <div class="caixa">
+    <img src="imagens/logo_cafeteria.png" class="logo" alt="logo da cafeteria" onclick="inicial()">
+    <div class="tchome" onclick="inicial()">HOME</div>
+    <div class="text conheca" onclick="sobre()">Conheça</div>
+    <div class="a10 conheca" onclick="eventos()">Eventos</div>
+    <div class="text conheca" onclick="cardapio()">Cardápio</div>
+    <div class="text conheca" onclick="contato()">Contato</div>
+    <img src="imagens/facebook.png" class="ico facebook" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ico instagram" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ico instagram" alt="tiktok" onclick="tiktok()">
+    <div class="botao" onclick="menuas()">
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+    </div>
+    </div>
+
+    <div id="menu" class="slideDiv esconde">
+        <div class="print" onclick="inicial()">HOME</div>
+        <div id="pag" class="evento contato" onclick="sobre()">Conheça</div>
+        <div id="pag" class="evento contato" onclick="eventos()">Eventos</div>
+        <div id="pag" class="evento contato" onclick="cardapio()">Cardápio</div>
+        <div id="pag" class="evento contato" onclick="contato()">Contato</div>
+        <div class="redes">
+        <img src="imagens/facebook.png" class="ita" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ita" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ita" alt="tiktok" onclick="tiktok()">
+    </div>
+    </div>
+
+    <div class="container">
+        <img src="imagens/doces-eventos.jpg" class="fundo" alt="doces dos eventos na cafeteria">
+        <div class="text-overlay10 a1">EVENTOS ESPECIAIS</div>
+        <div class="text-overlay10 a2">FAÇA DO SEU EVENTO, UMA CELEBRAÇÃO INESQUECIVEL</div>
+    </div>
+
+<div class="central">
+    <div class="inde3div">
+    <p class="pargato15">Organizar eventos na nossa cafeteria pode transformar seu momento de lazer em uma experiência ainda mais especial. Imagine participar de noites de música ao vivo, degustações de café ou workshops que vão além da rotina do dia a dia.</p>
+    </div>
+
+<div style="margin-top: 70px;" class="central">
+    <h2 style="font-size: 24px; text-align: center;" class="cor">Transforme seu evento em uma celebração inesquecível com nossos bolos personalizados! Feitos com amor e do jeito que você deseja.</h2>
+    <img class="imagim" id="imagem47" src="bolo1.jpg" alt="Imagem">
+</div>
+
+    <h2 style="margin-top: 100px;" class="cor20">Solicite um orçamento</h2>
+    <form id="dataForm">
+         <label class="cor" for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br><br> 
+          <label class="cor" for="email">Email:</label> 
+          <input type="email" id="email" name="email" required><br><br> 
+          <label class="cor" for="whatsapp">Número de WhatsApp:</label> 
+          <input type="text" id="whatsapp" name="whatsapp" required><br><br> 
+          <label class="cor" for="descricao">Nos conte um pouco sobre o evento:</label> 
+          <textarea id="descricao" name="descricao" required>
+          </textarea><br><br> 
+          <label class="cor" for="convidados">Número de Convidados:</label> 
+          <input type="number" id="convidados" name="convidados" required><br><br> 
+          <button class="button" type="submit">Enviar</button> </form>
+
+</div>
+    <div class="bege">
+        <div class="dav">
+        <P class="t3">FAÇA PARTE DA NOSSA EQUIPE</P>
+        <p class="t4">Junte-se a nós e experimente um ambiente acolhedor e dinâmico.
+             <b>Valorizamos o trabalho em equipe e o respeito.</b> Aqui,
+              você terá a chance de se desenvolver profissionalmente e contribuir para criar
+               momentos agradáveis para nossos clientes. Venha fazer parte da nossa história!</p>
+               <button class="btn3" onclick="contato()">Junte-se a nós</button>
+            </div>
+    </div>
+
+
+    <div class="escuro">
+<img src="imagens/logo_cafeteria.png" class="logo" alt="logo da cafeteria" onclick="inicial()">
+    <div class="tchome" onclick="inicial()">HOME</div>
+    <div class="text conheca" onclick="sobre()">Conheça</div>
+    <div class="a10 conheca" onclick="eventos()">Eventos</div>
+    <div class="text conheca" onclick="cardapio()">Cardápio</div>
+    <div class="text conheca" onclick="contato()">Contato</div>
+    <img src="imagens/facebook.png" class="ico facebook" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ico instagram" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ico instagram" alt="tiktok" onclick="tiktok()">
+    </div>
+    <div class="direitos">
+        <p class="teti">Todos os direitos reservados | @2025</p>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Encanto</title>
+    <link rel="icon" href="imagens/logo_cafeteria.ico">
+
+    <link rel="stylesheet" href="Cstyle.css">
+    <script src="JavaScript.js"></script>
+
+</head>
+<body style="background-color: rgb(218, 206, 166);">
+    <div class="caixa">
+    <img src="imagens/logo_cafeteria.png" class="logo" alt="logo da cafeteria" onclick="inicial()">
+    <div class="tchome" onclick="inicial()">HOME</div>
+    <div class="text conheca" onclick="sobre()">Conheça</div>
+    <div class="text conheca" onclick="eventos()">Eventos</div>
+    <div class="a10 conheca" onclick="cardapio()">Cardápio</div>
+    <div class="text conheca" onclick="contato()">Contato</div>
+    <img src="imagens/facebook.png" class="ico facebook" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ico instagram" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ico instagram" alt="tiktok" onclick="tiktok()">
+    <div class="botao" onclick="menuas()">
+        <div class="tr"></div>
+        <div class="tr"></div>
+        <div class="tr"></div>
+    </div>
+    </div>
+    
+    <div id="menu" class="slideDiv esconde">
+        <div class="print" onclick="inicial()">HOME</div>
+        <div id="pag" class="evento contato" onclick="sobre()">Conheça</div>
+        <div id="pag" class="evento contato" onclick="eventos()">Eventos</div>
+        <div id="pag" class="evento contato" onclick="cardapio()">Cardápio</div>
+        <div id="pag" class="evento contato" onclick="contato()">Contato</div>
+        <div class="redes">
+        <img src="imagens/facebook.png" class="ita" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ita" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ita" alt="tiktok" onclick="tiktok()">
+    </div>
+    </div>
+
+    <div class="container">
+        <img src="imagens/fundocafeter.jpg" class="fundo" alt="fundo da cafeteria">
+    </div>
+
+    <div style="height: 120px; width: 100%; background-color: rgb(139, 111, 49); justify-items: center; align-items: center;">
+    </div>
+
+    <div class="areab">
+        <button class="butoes" onclick="filterOptions('doces')">Doces</button>
+        <button class="butoes" onclick="filterOptions('cha')">Chás</button> 
+        <button class="butoes" onclick="filterOptions('paes')">Pães</button> 
+        <button class="butoes" onclick="filterOptions('cafe')">Cafés</button> 
+        <button class="butoes" onclick="filterOptions('milkshake')">Milk-Shakes</button> 
+        <button class="butoes" onclick="filterOptions('croissant')">Croissants</button>
+        <button class="butoes" onclick="filterOptions('salgados')">Salgados</button>
+        <button class="butoes" onclick="filterOptions('option')">Tudo</button>
+    </div>
+
+<div class="cardapiosa">
+    <br class="option doces show"><br class="option doces show">
+    <h1 class="option doces show">Doces</h1>
+<div class="option doces show box">
+<div class="felx">
+    <div class="option doces show opcao"><b>Bolo de Chocolate(Fatia)</b><br>Um bolo fofo e rico em chocolate, perfeito para os amantes de chocolate.</div> <div class="option doces show opcao tipos">R$10,00</div>
+</div>
+<div class="felx">
+    <div class="option doces show opcao"><b>Cheesecake(Fatia)</b><br>Uma sobremesa cremosa e deliciosa com base crocante, coberta com frutas vermelhas.</div><div class="option doces show opcao tipos">R$12,00</div>
+</div>
+<div class="felx">
+    <div class="option doces show opcao"><b>Torta de Limão(Fatia)</b><br>Base crocante com um recheio de creme de limão azedinho e cobertura de merengue.</div><div class="option doces show opcao tipos">R$11,00</div>
+</div>
+<div class="felx">
+    <div class="option doces show opcao"><b>Macarons(1 Unidade)</b><br>Delicados e coloridos, crocantes por fora e macios por dentro, com vários sabores.</div><div class="option doces show opcao tipos">R$6,00</div>
+</div> 
+<div class="felx">
+    <div class="option doces show opcao"><b>Muffin de Blueberry</b><br>Muffin macio e saboroso, cheio de blueberries suculentas.</div><div class="option doces show opcao tipos">R$7,00</div>
+</div>
+<div class="felx">
+    <div class="option doces show opcao"><b>Brownie</b><br>Brownie denso e úmido, cheio de sabor de chocolate.</div><div class="option doces show opcao tipos">R$8,00</div>
+</div>
+<div class="felx"> 
+    <div class="option doces show opcao"><b>Pudim de Leite</b><br>Pudim cremoso e doce, com uma calda de caramelo irresistível.</div> <div class="option doces show opcao tipos">R$9,00</div>
+</div>
+</div>
+
+    <br class="option cha show"><br class="option cha show"> 
+    <h1 class="option cha show">Chás</h1>
+<div class="option cha show box">
+<div class="felx"> 
+    <div class="option cha show opcao"><b>Chá Verde</b><br>Refrescante e antioxidante.</div><div class="option cha show opcao tipos">R$6,00</div>
+</div>
+<div class="felx">
+    <div class="option cha show opcao"><b>Chá de Camomila</b><br>Calmante e relaxante, perfeito para o fim do dia.</div><div class="option cha show opcao tipos">R$5,00</div>
+ </div>
+ <div class="felx">
+    <div class="option cha show opcao"><b>Chá de Hibisco</b><br>Levemente ácido e floral.</div><div class="option cha show opcao tipos">R$6,50</div>
+</div>
+<div class="felx">
+    <div class="option cha show opcao"><b>Chá de Hortelã</b><br>Refrescante e digestivo.</div><div class="option cha show opcao tipos">R$5,50</div>
+ </div>
+ <div class="felx">   
+    <div class="option cha show opcao"><b>Chá Preto</b><br>Rico e encorpado, perfeito para um despertar.</div><div class="option cha show opcao tipos">R$5,00</div>
+</div>
+<div class="felx">   
+    <div class="option cha show opcao"><b>Chá de Ervas</b><br>Mistura de ervas selecionadas para um sabor único.</div><div class="option cha show opcao tipos">R$5,50</div>
+</div>
+<div class="felx">  
+    <div class="option cha show opcao"><b>Chá de Frutas Vermelhas</b><br>Frutado e refrescante.</div><div class="option cha show opcao tipos">R$6,00</div>
+</div>
+    </div>
+
+    <br class="option paes show"><br class="option paes show">
+    <h1 class="option paes show">Pães</h1>
+<div class="option paes show box">
+<div class="felx"> 
+    <div class="option paes show opcao"><b>Pão de Queijo</b><br>Crocante por fora e macio por dentro, com sabor irresistível de queijo.</div><div class="option paes show opcao tipos">R$3,00</div>
+</div>
+<div class="felx"> 
+    <div class="option paes show opcao"><b>Baguete</b><br>Pão francês clássico, crocante por fora e macio por dentro.</div><div class="option paes show opcao tipos">R$4,00</div>
+</div>
+<div class="felx">
+    <div class="option paes show opcao"><b>Pão Integral</b><br>Saudável e nutritivo, feito com grãos integrais.</div> <div class="option paes show opcao tipos">R$5,00</div> 
+</div>
+<div class="felx"> 
+    <div class="option paes show opcao"><b>Focaccia</b><br>Pão italiano, macio e coberto com azeite e ervas.</div> <div class="option paes show opcao tipos">R$6,00</div>
+</div> 
+<div class="felx"> 
+    <div class="option paes show opcao"><b>Ciabatta</b><br>Pão italiano rústico, crocante por fora e macio por dentro.</div><div class="option paes show opcao tipos">R$6,50</div> 
+</div>
+<div class="felx">  
+    <div class="option paes show opcao"><b>Pão de Centeio</b><br>Pão escuro e saboroso, feito com centeio.</div><div class="option paes show opcao tipos">R$5,50</div>
+</div>
+    </div>
+
+    <br class="option cafe show"><br class="option cafe show">
+    <h1 class="option cafe show">Cafés</h1>
+ <div class="option cafe show box">
+    <div class="felx">
+    <div class="option cafe show opcao"><b>Expresso</b><br>Café puro e concentrado.</div><div class="option cafe show opcao tipos">R$4,00</div>
+</div>
+<div class="felx">
+    <div class="option cafe show opcao"><b>Cappuccino</b><br>Mistura de café expresso, leite vaporizado e espuma de leite.</div> <div class="option cafe show opcao tipos">R$7,00</div>
+</div>
+<div class="felx">
+    <div class="option cafe show opcao"><b>Café com Leite</b><br>Café expresso com uma dose generosa de leite quente.</div><div class="option cafe show opcao tipos">R$6,00</div>
+</div>
+<div class="felx">
+    <div class="option cafe show opcao"><b>Latte Macchiato</b><br>Leite vaporizado com um toque de café expresso.</div> <div class="option cafe show opcao tipos">R$8,00</div>
+</div>
+<div class="felx">
+    <div class="option cafe show opcao"><b>Mocha</b><br>Café expresso, leite vaporizado e chocolate.</div> <div class="option cafe show opcao tipos">R$9,00</div>
+</div>
+<div class="felx">
+    <div class="option cafe show opcao"><b>Americano</b><br>Café expresso diluído em água quente.</div><div class="option cafe show opcao tipos">R$5,00</div>
+</div>
+<div class="felx"> 
+    <div class="option cafe show opcao"><b>Macchiato</b><br>Café expresso com uma pequena quantidade de espuma de leite.</div><div class="option cafe show opcao tipos">R$7,50</div>
+</div>
+    </div>
+
+    <br class="option milkshake show"><br class="option milkshake show">
+    <h1 class="option milkshake show">Milk-Shakes</h1>
+<div class="option milkshake show box">
+<div class="felx">
+    <div class="option milkshake show opcao"><b>Milk-Shake de Chocolate</b><br>Milk-shake cremoso e rico em sabor de chocolate.</div><div class="option milkshake show opcao tipos">R$12,00</div>
+</div>
+<div class="felx">
+    <div class="option milkshake show opcao"><b>Milk-Shake de Morango</b><br>Milk-shake refrescante com pedaços de morango.</div><div class="option milkshake show opcao tipos">R$12,00</div>
+</div>
+<div class="felx">
+    <div class="option milkshake show opcao"><b>Milk-Shake de Baunilha</b><br>Milk-shake suave e saboroso de baunilha.</div><div class="option milkshake show opcao tipos">R$11,00</div>
+</div>
+<div class="felx">
+    <div class="option milkshake show opcao"><b>Milk-Shake de Oreo</b><br>Milk-shake delicioso com pedaços de biscoito Oreo.</div><div class="option milkshake show opcao tipos">R$14,00</div>
+</div>
+<div class="felx">
+    <div class="option milkshake show opcao"><b>Milk-Shake de Doce de Leite</b><br>Milk-shake cremoso com o sabor irresistível de doce de leite.</div><div class="option milkshake show opcao tipos">R$13,00</div>
+</div>
+<div class="felx">  
+    <div class="option milkshake show opcao"><b>Milk-Shake de Nutella</b><br>Milk-shake indulgente com o sabor rico da Nutella.</div><div class="option milkshake show opcao tipos">R$15,00</div>
+</div>
+<div class="felx">  
+    <div class="option milkshake show opcao"><b>Milk-Shake de Banana</b><br>Milk-shake refrescante e nutritivo de banana.</div><div class="option milkshake show opcao tipos">R$11,50</div>
+</div>      
+</div>
+    
+    <br class="option croissant show"><br class="option croissant show">
+    <h1 class="option croissant show">Croissants</h1>
+<div class="option croissant show box">
+<div class="felx">
+    <div class="option croissant show opcao"><b>Croissant Simples</b><br>Clássico croissant amanteigado e folhado.</div><div class="option croissant show opcao tipos">R$7,00</div>
+</div>
+<div class="felx">
+    <div class="option croissant show opcao"><b>Croissant de Chocolate</b><br>Croissant recheado com chocolate derretido.</div><div class="option croissant show opcao tipos">R$8,00</div>
+</div>
+<div class="felx">
+    <div class="option croissant show opcao"><b>Croissant de Amêndoas</b><br>Croissant recheado e coberto com amêndoas.</div><div class="option croissant show opcao tipos">R$9,00</div>
+</div>
+<div class="felx"> 
+    <div class="option croissant show opcao"><b>Croissant de Presunto e Queijo</b><br>Croissant recheado com presunto e queijo derretido.</div><div class="option croissant show opcao tipos">R$10,00</div>
+</div>
+<div class="felx"> 
+    <div class="option croissant show opcao"><b>Croissant de Frango com Catupiry</b><br>Croissant recheado com frango e catupiry cremoso.</div><div class="option croissant show opcao tipos">R$11,00</div>
+</div>
+<div class="felx">
+    <div class="option croissant show opcao"><b>Croissant de Maçã e Canela</b><br>Croissant recheado com maçã e um toque de canela.</div><div class="option croissant show opcao tipos">R$9,00</div>
+</div>
+<div class="felx">
+    <div class="option croissant show opcao"><b>Croissant de Doce de Leite</b><br>Croissant recheado com doce de leite.</div><div class="option croissant show opcao tipos">R$8,50</div>
+</div>
+</div>
+    
+    <br class="option salgados show"><br class="option salgados show">
+    <h1 class="option salgados show">Salgados</h1>
+<div class="option salgados show box">
+<div class="felx">
+    <div class="option salgados show opcao"><b>Coxinha</b><br>Clássico salgado brasileiro, recheado com frango desfiado.</div><div class="option salgados show opcao tipos">R$5,00</div>
+</div>
+<div class="felx"> 
+    <div class="option salgados show opcao"><b>Esfiha</b><br>Salgado recheado com carne, frango ou queijo.</div><div class="option salgados show opcao tipos">R$6,00</div>
+</div>
+<div class="felx">
+    <div class="option salgados show opcao"><b>Pão de Batata</b><br>Pão macio feito com batata e recheado com queijo.</div><div class="option salgados show opcao tipos">R$7,00</div>
+</div>
+<div class="felx">
+    <div class="option salgados show opcao"><b>Empada</b><br>Torta pequena recheada com frango, palmito ou camarão.</div><div class="option salgados show opcao tipos">R$6,50</div>
+</div>
+<div class="felx">
+    <div class="option salgados show opcao"><b>Quibe</b><br>Salgado de origem árabe, feito com carne e trigo.</div><div class="option salgados show opcao tipos">R$5,50</div>
+</div>
+<div class="felx">
+    <div class="option salgados show opcao"><b>Pastel</b><br>Massa crocante e recheada, frita na hora.</div><div class="option salgados show opcao tipos">R$6,00</div>
+</div>
+<div class="felx">
+    <div class="option salgados show opcao"><b>Mini Pão de Queijo Recheado</b><br>Versão menor do pão de queijo, com recheios variados.</div><div class="option salgados show opcao tipos">R$4,00</div>
+</div>
+</div>
+
+</div>
+    <br><br>
+
+    <div class="escuro">
+<img src="imagens/logo_cafeteria.png" class="logo" alt="logo da cafeteria" onclick="inicial()">
+    <div class="tchome" onclick="inicial()">HOME</div>
+    <div class="text conheca" onclick="sobre()">Conheça</div>
+    <div class="text conheca" onclick="eventos()">Eventos</div>
+    <div class="a10 conheca" onclick="cardapio()">Cardápio</div>
+    <div class="text conheca" onclick="contato()">Contato</div>
+    <img src="imagens/facebook.png" class="ico facebook" alt="facebook" onclick="face()">
+    <img src="imagens/instagram.png" class="ico instagram" alt="instagram" onclick="insta()">
+    <img src="imagens/tiktok.png" class="ico instagram" alt="tiktok" onclick="tiktok()">
+    </div>
+    <div class="direitos">
+        <p class="teti">Todos os direitos reservados | @2025</p>
+        </div>
+
+</body>
+</html>
